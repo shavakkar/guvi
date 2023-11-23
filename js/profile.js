@@ -6,15 +6,16 @@ function update(){
 
     $.ajax({
         url:'/php/profile.php',
-        type:'POST',
-        data:{
-            nameSend:nameUp,
-            emailSend:emailUp,
-            mobileSend:mobileUp,
-            placeSend:placeUp,
-        },
-        success:function(data,status){
-            console.log(status);
+        type:'GET',
+        // data:{
+        //     nameSend:nameUp,
+        //     emailSend:emailUp,
+        //     mobileSend:mobileUp,
+        //     placeSend:placeUp,
+        // },
+            success:function(response){
+            console.log(response);
+
         }
     });
 }

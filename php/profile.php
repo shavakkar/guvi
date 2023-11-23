@@ -1,4 +1,6 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST");
 
 $conn = new mysqli('127.0.0.1', 'root', 'testtest', 'guvi');
 
@@ -17,7 +19,6 @@ if (
     $row = mysqli_fetch_assoc($result);
     $id = $row['id'];
 
-    echo json_encode($id);
 
-    $sql = "UPDATE register SET fullname='$nameSend', email='$email', mobile='$mobileSend', place='$placeSend' WHERE id=";
+    $sql = "UPDATE register SET fullname='$nameSend', email='$email', mobile='$mobileSend', place='$placeSend' WHERE id='$id'";
 }

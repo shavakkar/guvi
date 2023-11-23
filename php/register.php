@@ -1,4 +1,6 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST");
 
 $conn = new mysqli('127.0.0.1', 'root', 'testtest', 'guvi');
 

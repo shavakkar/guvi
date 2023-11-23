@@ -8,14 +8,15 @@ function login(){
 
     $.ajax({
         url:"/php/login.php",
-        type:"POST",
+        method:"POST",
         data:{
             emailSend:emailLog,
             passwordSend:passwordLog,
         },
-        success:function(data,status){
-            console.log(status);
-            window.location = 'profile.html';
-        }
+        // success:function(data,status){
+        //     console.log(data);
+        //     console.log(status);
+        //     // window.location = 'profile.html';
+        // }
     });
 }
