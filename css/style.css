@@ -1,0 +1,14 @@
+body{
+    background-color:aliceblue;
+}
+.container{
+    background-color: #eee;
+    border-radius: 10px;
+}
+.wrapper{
+    padding: 30px 10px;
+}
+img{
+    width: 70px;
+    border-radius: 100%;
+}
